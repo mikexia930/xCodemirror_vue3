@@ -1,0 +1,41 @@
+{
+  "name": "x-codemirror-vue3",
+  "private": false,
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "vue3",
+    "component",
+    "CodeMirror",
+    "vue codemirror"
+  ],
+  "main": "./dist/x-codemirror-vue3.umd.js",
+  "module": "./dist/x-codemirror-vue3.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/x-codemirror-vue3.es.js",
+      "require": "./dist/x-codemirror-vue3.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "codemirror": "^5.65.6",
+    "diff-match-patch": "^1.0.5",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  }
+}
